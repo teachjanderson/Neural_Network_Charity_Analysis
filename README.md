@@ -24,11 +24,18 @@ The processing began with focusing on the metrics and variables to consider in t
 
 # Compiling, Training, and Evaluating the Model
 
-The initial model 
+# The initial model 
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
+<p align="center"><img src="https://github.com/teachjanderson/Neural_Network_Charity_Analysis/blob/main/Images/Model.png" width="600" />
 
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
-There is a recommendation on using a different model to solve the classification problem, and justification (3 pt)
+The initial model included 5,981 parameters with 43 inputs, 2 hidden layers, and 1 output layer. The first hidden layer had 43 inputs and 80 neurons. The second layer had 80 inputs and 30 neurons. The activation for both hidden layers was RULE and the output layer used Sigmoid. The target accuraacy for this model was 75%. The model achieved an accuracy 72.63%
+
+# Optimizations
+
+<p align="center"><img src="https://github.com/teachjanderson/Neural_Network_Charity_Analysis/blob/main/Images/Model.png" width="600" />
+
+Four attemps were made to increase the accuracy of this model with limited success. The first attempt focused on using ASK_AMT as the target variable. The parameters of the model were left the same as the initial model. As seen above, this resulted in a loss of accuracy of 1/3 of a percent. The second optimization focused on INCOME_AMT similar to the first optimization. A third hidden layers was added and the neurons were adjusted on the other hidden layers. This was an improvement but still not as efficient as the initial model. Finally, a third and fourth optimization were attempted. Each of these focused on changing the layers, with the fourth optimization adding a dropout layer, and the neurons. Similarly, neither of these were able to achieve the effectiness level of the first attempt. 
+
+## Summary
+
+The initial model achieved the greatest accuracy for Alphabet Soup but is still short of the 75% accuracy level. The different optimizations with changes in variables, layers, epochs, and dropout layers were unable to reach the 75% target. One recommendation is using the Random Forest Classifier as it may resolve problems with overfitting. 
