@@ -32,7 +32,7 @@ The initial model included 5,981 parameters with 43 inputs, 2 hidden layers, and
 
 # Optimizations
 
-<p align="center"><img src="https://github.com/teachjanderson/Neural_Network_Charity_Analysis/blob/main/Images/Model.png" width="600" />
+<p align="center"><img src="https://github.com/teachjanderson/Neural_Network_Charity_Analysis/blob/main/Images/Results.png" width="600" />
 
 Four attemps were made to increase the accuracy of this model with limited success. The first attempt focused on using ASK_AMT as the target variable. The parameters of the model were left the same as the initial model. As seen above, this resulted in a loss of accuracy of 1/3 of a percent. The second optimization focused on INCOME_AMT similar to the first optimization. A third hidden layers was added and the neurons were adjusted on the other hidden layers. This was an improvement but still not as efficient as the initial model. Finally, a third and fourth optimization were attempted. Each of these focused on changing the layers, with the fourth optimization adding a dropout layer, and the neurons. Similarly, neither of these were able to achieve the effectiness level of the first attempt. 
 
